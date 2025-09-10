@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Details - Ultracube Factoriopedia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🧊 Ultracube Factoriopedia</h1>
+            <nav>
+                <a href="index.html">← Back to Items</a>
+            </nav>
+        </header>
+
+        <div id="loading" class="loading">Loading item details...</div>
+
+        <div id="item-details" class="item-details" style="display: none;">
+            <div class="item-header">
+                <div class="item-header-icon">
+                    <img id="item-header-icon" class="item-header-icon-img" alt="Item Icon" style="display: none;"
+                        onerror="this.style.display='none'">
+                    <div id="item-header-icon-placeholder" class="item-header-icon-placeholder" style="display: none;">
+                    </div>
+                </div>
+                <div class="item-header-content">
+                    <h2 id="item-name"></h2>
+                    <div class="item-info">
+                        <span id="item-type" class="item-type"></span>
+                        <div id="unlock-tech" class="unlock-tech" style="display: none;">
+                            <strong>Unlocked by:</strong> <span id="unlock-tech-name"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-content">
+                <div class="section" id="how-to-make" style="display: none;">
+                    <h3>How to Make</h3>
+                    <div id="recipes-that-make" class="recipes-list"></div>
+                </div>
+
+                <div class="section" id="used-in" style="display: none;">
+                    <h3>Used In</h3>
+                    <div id="recipes-that-use" class="recipes-list"></div>
+                </div>
+
+                <div class="section" id="can-craft" style="display: none;">
+                    <h3>Can Craft</h3>
+                    <div id="recipes-can-craft" class="recipes-list"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="data-processor.js"></script>
+    <script src="item-details.js"></script>
+</body>
+
+</html>

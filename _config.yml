@@ -5,11 +5,8 @@ source: webpage
 
 # Include JSON files in the build output
 include:
-  - "*.js"
-  - "*.css"
   - "*.json"
   - "icons/*.json"
-  - "icons/*.png"
 
 # Exclude unnecessary files from the build
 exclude:

@@ -1,5 +1,8 @@
 # Jekyll configuration for Ultracube Factoriopedia
 
+# Set the source directory to webpage
+source: webpage
+
 # Include JSON files in the build output
 include:
   - "*.json"
@@ -10,9 +13,6 @@ exclude:
   - README.md
   - .git/
   - .github/
-
-# Set source directory
-source: ./webpage
 
 # Keep files that would normally be excluded
 keep_files:
